@@ -1,0 +1,62 @@
+.header {
+  background-color: var(--black);
+  width: 100%;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12px 80px;
+}
+
+.logoLink {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.headerInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.headerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--black);
+  border: none;
+  border-radius: 30px;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.headerBtn:hover {
+  background-color: var(--light-gray);
+}
+
+.bellIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+}
+
+.userIcon {
+  width: 28px;
+  height: 28px;
+  stroke: var(--white);
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+}

@@ -1,0 +1,23 @@
+.navSidebar {
+  width: 300px;
+  padding: 40px 30px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navLink {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-gray);
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.activeLink {
+  color: var(--black);
+  transform: scale(1.03);
+}

@@ -1,0 +1,10 @@
+.studentsPageContainer {
+  padding: 40px;
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--black);
+}

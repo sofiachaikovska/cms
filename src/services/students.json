@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "group": "KN-21",
+    "name": "John",
+    "surname": "Smith",
+    "gender": "M",
+    "birthday": "11.05.2004",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "group": "KN-22",
+    "name": "Ann",
+    "surname": "Bond",
+    "gender": "F",
+    "birthday": "24.04.2004",
+    "status": "inactive"
+  },
+  {
+    "id": 3,
+    "group": "KN-21",
+    "name": "Michael",
+    "surname": "Brown",
+    "gender": "M",
+    "birthday": "15.07.2003",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "group": "KN-23",
+    "name": "Emily",
+    "surname": "Davis",
+    "gender": "F",
+    "birthday": "03.09.2004",
+    "status": "inactive"
+  },
+  {
+    "id": 5,
+    "group": "KN-22",
+    "name": "Christopher",
+    "surname": "Wilson",
+    "gender": "M",
+    "birthday": "21.12.2003",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "group": "KN-24",
+    "name": "Jessica",
+    "surname": "Martinez",
+    "gender": "F",
+    "birthday": "07.06.2004",
+    "status": "inactive"
+  },
+  {
+    "id": 7,
+    "group": "KN-23",
+    "name": "David",
+    "surname": "Anderson",
+    "gender": "M",
+    "birthday": "29.03.2003",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "group": "KN-24",
+    "name": "Sarah",
+    "surname": "Thomas",
+    "gender": "F",
+    "birthday": "10.11.2004",
+    "status": "inactive"
+  },
+  {
+    "id": 9,
+    "group": "KN-21",
+    "name": "Matthew",
+    "surname": "Harris",
+    "gender": "M",
+    "birthday": "17.08.2003",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "group": "KN-22",
+    "name": "Olivia",
+    "surname": "Clark",
+    "gender": "F",
+    "birthday": "05.02.2004",
+    "status": "inactive"
+  }
+]

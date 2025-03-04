@@ -1,0 +1,63 @@
+:root {
+  --pink: #ed1151;
+  --light-gray: #fafafa42;
+  --text-gray: #424242;
+  --gray: #f0f0f0;
+  --dark-gray: #171717;
+  --black: #000000;
+  --white: #ffffff;
+
+  --main-font: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
