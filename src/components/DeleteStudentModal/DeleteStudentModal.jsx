@@ -22,7 +22,9 @@ const DeleteStudentModal = ({ student, onClose, onDelete }) => {
             >
               Ok
             </button>
-            <button className={css.deleteBtn}>Cancel</button>
+            <button className={css.deleteBtn} onClick={onClose}>
+              Cancel
+            </button>
           </div>
         </div>
       </div>
