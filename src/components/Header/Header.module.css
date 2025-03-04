@@ -49,6 +49,11 @@
   fill: var(--white);
 }
 
+.userContainer {
+  position: relative;
+  display: inline-block;
+}
+
 .userIcon {
   width: 28px;
   height: 28px;
