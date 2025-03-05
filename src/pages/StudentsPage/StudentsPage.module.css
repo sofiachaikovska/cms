@@ -8,3 +8,13 @@
   font-size: 28px;
   color: var(--black);
 }
+
+@media (max-width: 480px) {
+  .studentsPageContainer {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}

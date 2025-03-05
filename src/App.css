@@ -1,3 +1,9 @@
 .innerAppContainer {
   display: flex;
 }
+
+@media (max-width: 480px) {
+  .innerAppContainer {
+    flex-direction: column;
+  }
+}

@@ -3,6 +3,12 @@
   padding: 40px 30px;
 }
 
+@media (max-width: 480px) {
+  .navSidebar {
+    padding: 10px;
+  }
+}
+
 .navContainer {
   display: flex;
   flex-direction: column;
