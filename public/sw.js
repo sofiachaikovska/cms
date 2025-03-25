@@ -1,7 +1,12 @@
 const CACHE_NAME = 'students-cache-v1';
-const urlsToCache = ['/', '/index.html'];
+const urlsToCache = [
+  '/',
+  '/index.html',
+  '/src/index.css',
+  '/src/main.jsx',
+  '/src/App.jsx',
+];
 
-// Додаємо файли після компіляції (якщо є main.css і main.js)
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {

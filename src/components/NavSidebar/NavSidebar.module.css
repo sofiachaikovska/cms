@@ -3,9 +3,9 @@
   padding: 40px 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1439px) {
   .navSidebar {
-    padding: 10px;
+    display: none;
   }
 }
 

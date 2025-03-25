@@ -1,0 +1,129 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mobileMenuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.mobileMenuContainer.closing {
+  animation: fadeOut 0.5s ease-out 0.5s forwards;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flyOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.mobileMenuInnerContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  height: 100dvh;
+  width: 250px;
+  z-index: 1000;
+  padding-bottom: 30px;
+  animation: flyIn 0.5s ease-out forwards;
+}
+
+.mobileMenuInnerContainer.closingInner {
+  animation: flyOut 1s ease-out 0.5s forwards;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  font-size: 22px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.navContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 200px;
+}
+
+.headerLink {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-gray);
+  padding: 10px;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.activeLink {
+  color: var(--black);
+  transform: scale(1.03);
+}
+
+.userNavList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.userNavListItem {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  border: 1.5px solid var(--black);
+  background-color: var(--black);
+  border-radius: 30px;
+}

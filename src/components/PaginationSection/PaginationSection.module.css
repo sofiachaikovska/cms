@@ -1,0 +1,38 @@
+.paginationContainer {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.pageList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.arrowIcon {
+  cursor: pointer;
+}
+
+.pageNumberItem {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1.5px solid var(--black);
+  border-radius: 30px;
+  padding: 6px 10px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pageNumberItem:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.pageActive {
+  background-color: var(--black);
+  color: var(--white);
+}

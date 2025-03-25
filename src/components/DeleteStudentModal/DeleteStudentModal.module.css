@@ -13,6 +13,12 @@
   justify-content: center;
 }
 
+@media (max-width: 1439px) {
+  .deleteStudentModal {
+    padding: 20px;
+  }
+}
+
 .deleteStudentModalContainer {
   position: relative;
   background-color: var(--white);

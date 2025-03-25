@@ -4,21 +4,17 @@ import { useState } from 'react';
 
 import StudentModal from '../StudentModal/StudentModal';
 import DeleteStudentModal from '../DeleteStudentModal/DeleteStudentModal';
-
-import initialStudents from '../../services/students.json';
+import PaginationSection from '../PaginationSection/PaginationSection';
 
 const StudentsTable = () => {
-  const [students, setStudents] = useState(initialStudents);
+  const [students, setStudents] = useState([]);
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [studentToDelete, setStudentToDelete] = useState(null);
 
-  const handleOpenAddModal = () => {
-    setSelectedStudent(null);
-    setIsModalOpen(true);
-  };
-
-  const handleOpenEditModal = student => {
+  const handleOpenModal = e => {
+    const studentId = Number(e.currentTarget.dataset.id);
+    const student = students.find(s => s.id === studentId) || null;
     setSelectedStudent(student);
     setIsModalOpen(true);
   };
@@ -62,8 +58,8 @@ const StudentsTable = () => {
 
   return (
     <section className={css.studentsTableSection}>
-      <button className={css.addBtn} onClick={handleOpenAddModal}>
-        +
+      <button className={css.addBtn} data-id="0" onClick={handleOpenModal}>
+        <span className="icon-plus"></span>
       </button>
       <table className={css.studentsTable}>
         <thead>
@@ -92,9 +88,7 @@ const StudentsTable = () => {
               <td>
                 <span
                   className={
-                    student.status === 'active'
-                      ? css.statusActive
-                      : css.statusInactive
+                    student.status === 1 ? css.statusActive : css.statusInactive
                   }
                 ></span>
               </td>
@@ -102,30 +96,16 @@ const StudentsTable = () => {
                 <div className={css.optionsBtnContainer}>
                   <button
                     className={css.optionsBtn}
-                    onClick={() => handleOpenEditModal(student)}
+                    data-id={student.id}
+                    onClick={handleOpenModal}
                   >
-                    <svg
-                      className={css.penIcon}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 28 32"
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="0.1"
-                    >
-                      <path
-                        strokeLinejoin="round"
-                        strokeLinecap="round"
-                        strokeMiterlimit="4"
-                        strokeWidth="2.6667"
-                        d="M22 4.667c0.512-0.512 1.219-0.828 2-0.828 1.562 0 2.828 1.266 2.828 2.828 0 0.781-0.317 1.488-0.828 2l-16.667 16.667-5.333 1.333 1.333-5.333 16.667-16.667z"
-                      ></path>
-                    </svg>
+                    <span className="icon-pen"></span>
                   </button>
                   <button
                     className={css.optionsBtn}
                     onClick={() => handleOpenDeleteModal(student)}
                   >
-                    ×
+                    <span className="icon-remove"></span>
                   </button>
                 </div>
               </td>
@@ -133,6 +113,7 @@ const StudentsTable = () => {
           ))}
         </tbody>
       </table>
+      <PaginationSection />
       {isModalOpen && (
         <StudentModal
           student={selectedStudent}

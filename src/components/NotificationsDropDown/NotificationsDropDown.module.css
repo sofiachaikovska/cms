@@ -1,0 +1,59 @@
+.notificationsContainer {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 400px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 30px;
+  z-index: 1000;
+}
+
+@media (max-width: 1439px) {
+  .notificationsContainer {
+    right: -10px;
+    width: 300px;
+  }
+}
+
+.notificationsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.notificationsListItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fromContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fromName {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.message {
+  width: 100%;
+  height: 50px;
+  background-color: var(--text-gray);
+  opacity: 0.4;
+  border-radius: 30px;
+}

@@ -3,18 +3,20 @@
   width: 100%;
 }
 
+@media (max-width: 1439px) {
+  .studentsPageContainer {
+    padding: 20px;
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 28px;
   color: var(--black);
 }
 
-@media (max-width: 480px) {
-  .studentsPageContainer {
-    padding: 10px;
-  }
-
+@media (max-width: 1439px) {
   .title {
-    font-size: 22px;
+    font-size: 24px;
   }
 }

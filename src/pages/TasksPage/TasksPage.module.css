@@ -1,0 +1,23 @@
+.tasksPageContainer {
+  padding: 40px;
+  width: 100%;
+}
+
+@media (max-width: 1439px) {
+  .tasksPageContainer {
+    padding: 20px;
+    min-height: 100dvh;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--black);
+}
+
+@media (max-width: 1439px) {
+  .title {
+    font-size: 24px;
+  }
+}

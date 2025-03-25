@@ -1,8 +1,8 @@
 [
-  { "id": 7, "name": "KN-21" },
-  { "id": 8, "name": "KN-22" },
-  { "id": 9, "name": "KN-23" },
-  { "id": 10, "name": "KN-24" },
-  { "id": 11, "name": "KN-25" },
-  { "id": 12, "name": "KN-26" }
+  { "id": 1, "name": "KN-21" },
+  { "id": 2, "name": "KN-22" },
+  { "id": 3, "name": "KN-23" },
+  { "id": 4, "name": "KN-24" },
+  { "id": 5, "name": "KN-25" },
+  { "id": 6, "name": "KN-26" }
 ]

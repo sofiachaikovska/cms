@@ -1,0 +1,13 @@
+.loaderContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.loadingText {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+}
